@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-ThemeData CounterTheme() {
+ThemeData counterTheme() {
   return ThemeData(
     primarySwatch: Colors.blue,
   );

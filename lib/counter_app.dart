@@ -9,7 +9,7 @@ class CounterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: CounterTheme(),
+      theme: counterTheme(),
       home: BlocProvider(
         create: (context) => CounterCubit(),
         child: HomeScreen(title: 'Flutter Demo Home Page'),
