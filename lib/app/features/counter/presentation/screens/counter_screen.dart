@@ -25,6 +25,7 @@ class CounterScreen extends StatelessWidget {
               builder: (context, state) {
                 return Text(
                   '${state.countValue}',
+                  key: const Key('count_value_text'),
                   style: Theme.of(context).textTheme.headline4,
                 );
               },

@@ -10,7 +10,7 @@ class IncrementFloatingActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      key: Key('increment_control'),
+      key: const Key('increment_control'),
       onPressed: () => context.read<CounterCubit>().increment(),
       tooltip: 'Increment',
       child: Icon(Icons.add),
