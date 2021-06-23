@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tdd_counter_cubit/cubit/counter_cubit.dart';
-import 'package:tdd_counter_cubit/presentation/screens/home_screen.dart';
-import 'package:tdd_counter_cubit/presentation/theme/counter_theme.dart';
+
+import 'features/counter/cubit/counter_cubit.dart';
+import 'features/counter/presentation/screens/counter_screen.dart';
+import 'features/counter/presentation/theme/counter_theme.dart';
 
 class CounterApp extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class CounterApp extends StatelessWidget {
       theme: counterTheme(),
       home: BlocProvider(
         create: (context) => CounterCubit(),
-        child: HomeScreen(title: 'Flutter Demo Home Page'),
+        child: CounterScreen(title: 'Flutter Demo Home Page'),
       ),
     );
   }

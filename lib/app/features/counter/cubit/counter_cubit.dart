@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:tdd_counter_cubit/business_logic/increment_counter_state.dart';
-import 'package:tdd_counter_cubit/model/counter.dart';
+import 'package:tdd_counter_cubit/app/features/counter/business_logic/increment_counter_state.dart';
+import 'package:tdd_counter_cubit/app/features/counter/model/counter.dart';
 
 part 'counter_state.dart';
 
@@ -11,6 +11,7 @@ class CounterCubit extends Cubit<CounterState> {
   void increment() {
     final CounterState incrementedCounterState =
         incrementCounterState(counterState: state);
+
     emit(incrementedCounterState);
   }
 }

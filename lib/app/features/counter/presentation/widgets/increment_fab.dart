@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tdd_counter_cubit/cubit/counter_cubit.dart';
+import 'package:tdd_counter_cubit/app/features/counter/cubit/counter_cubit.dart';
 
 class IncrementFloatingActionButton extends StatelessWidget {
   const IncrementFloatingActionButton({

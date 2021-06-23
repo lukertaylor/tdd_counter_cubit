@@ -7,11 +7,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tdd_counter_cubit/counter_app.dart';
+import 'package:tdd_counter_cubit/app/counter_app.dart';
 
 void main() {
   testWidgets(
-      'Given the counter starts at 0, when the increment control is tapped then the counter increments from 0 to 1',
+      'Given the counter starts at 0, when the increment control is tapped then the counter text shows 1',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(CounterApp());
@@ -29,7 +29,7 @@ void main() {
     expect(find.text('1'), findsOneWidget);
   });
   testWidgets(
-      'Given the counter starts at 0, when the increment control is tapped twice then the counter increments from 0 to 1 and then to 2',
+      'Given the counter starts at 0, when the increment control is tapped twice then the counter text shows 2',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(CounterApp());

@@ -1,4 +1,4 @@
-import 'package:tdd_counter_cubit/cubit/counter_cubit.dart';
+import 'package:tdd_counter_cubit/app/features/counter/cubit/counter_cubit.dart';
 
 CounterState incrementCounterState({required CounterState counterState}) {
   final int incrementedValue = counterState.countValue + 1;

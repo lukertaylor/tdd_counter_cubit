@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tdd_counter_cubit/cubit/counter_cubit.dart';
-import 'package:tdd_counter_cubit/presentation/widgets/increment_fab.dart';
+import 'package:tdd_counter_cubit/app/features/counter/cubit/counter_cubit.dart';
+import 'package:tdd_counter_cubit/app/features/counter/presentation/widgets/increment_fab.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key, required this.title}) : super(key: key);
+class CounterScreen extends StatelessWidget {
+  CounterScreen({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
