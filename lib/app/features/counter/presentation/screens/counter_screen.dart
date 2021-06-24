@@ -2,24 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tdd_counter_cubit/app/features/counter/cubit/counter_cubit.dart';
 import 'package:tdd_counter_cubit/app/features/counter/presentation/widgets/increment_fab.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CounterScreen extends StatelessWidget {
-  CounterScreen({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  CounterScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(AppLocalizations.of(context)!.homeScreenTitle),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              AppLocalizations.of(context)!.buttonPushed,
             ),
             BlocBuilder<CounterCubit, CounterState>(
               builder: (context, state) {
